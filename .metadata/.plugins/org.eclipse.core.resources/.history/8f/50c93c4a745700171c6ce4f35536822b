@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+      <title>July 4th CodeAcademy Potluck Chef list.</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+      <h1>Form</h1>
+      <form action="#" th:action="@{/potluck}" th:object="${potluck}" method="post">
+         <!--  <p>Id: <input type="text" th:field="*{id}" /></p> -->
+          <p>Name: <input type="text" th:field="*{name}" /></p>
+           <p>Food: <input type="text" th:field="*{food}" /></p>
+          <p><input type="submit" value="Sign Up" /> <input type="reset" value="Reset" /></p>
+      </form>
+  </body>
+</html>
